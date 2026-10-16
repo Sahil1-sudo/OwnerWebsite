@@ -36,7 +36,7 @@ a {
     position: relative;
     display: flex;
     align-items: center;
-    background-image: url('/images/samrat.jpg');
+    background-image: url('/images/SamaratHero.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -343,7 +343,6 @@ a {
     color: #999;
 }
 
-
 /* =========================
    GALLERY
 ========================= */
@@ -361,13 +360,16 @@ a {
 .gallery-item {
     height: 250px;
     background: #292929;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #777;
     border-radius: 6px;
+    overflow: hidden;
 }
 
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
 
 /* =========================
    CONTACT
@@ -426,6 +428,8 @@ a {
 footer {
     background: #080808;
     padding: 35px 0;
+    position: relative;
+    clear: both;
 }
 
 .footer-content {
@@ -441,7 +445,6 @@ footer h3 {
 footer p {
     color: #777;
 }
-
 
 /* =========================
    MOBILE
@@ -517,4 +520,5 @@ footer p {
         object-fit: contain;
         margin-bottom: 20px;
     }
+
 }
